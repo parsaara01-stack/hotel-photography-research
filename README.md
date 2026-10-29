@@ -1,7 +1,7 @@
 # What Can Room Photos Tell Us?
 Parsa Ara · Protocol v0.2 · October 29, 2026
 
-An initial literature review and proposed two-arm study of room-photo coverage and factual identification. **No participant study has been conducted. No hotel photographs are cleared.** The public site is an interface demonstration, not an enrollment portal.
+An initial literature review and proposed two-arm study of room-photo coverage and factual identification. **No participant study has been conducted. No hotel photographs are cleared for research.** The public site is an interface demonstration, not an enrollment portal.
 
 Live site: https://parsaara01-stack.github.io/hotel-photography-research/
 
@@ -34,4 +34,4 @@ python3 analysis/analyze.py /restricted/roster.jsonl --release /reviewed/release
 ```
 The current `demo_only` release refuses this. A future release must map twelve actual stimulus files to arm and slot, verify their bytes, freeze six items and answerability, and reference actual review and preregistration records. Flags/hashes do not prove consent, rights or provenance. No participant data belong in Git.
 
-The initial literature review does not establish novelty, a pooled effect or sales impact. Third-party papers and images retain their rights. Source links are attribution, not permission to reuse images. Client media, participant responses and paper PDFs are not distributed. No recruitment, external outreach or purchase has occurred.
+The initial literature review does not establish novelty, a pooled effect or sales impact. Third-party papers and images retain their rights. Source links are attribution, not permission to reuse images. Two AI-generated fictional-room images are disclosed editorial illustrations, not property documentation or study stimuli; their prompts are in `docs/assets/image-provenance.txt`. Client media, participant responses and paper PDFs are not distributed. No recruitment, external outreach or purchase has occurred.
