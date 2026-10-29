@@ -1,0 +1,67 @@
+name: Verify research and publish protocol
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: photography-pages-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Expand first-publication source if present
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          if [ -f research-source.zip ]; then
+            python3 - <<'PY'
+          import pathlib, zipfile
+          with zipfile.ZipFile('research-source.zip') as archive:
+              for entry in archive.infolist():
+                  p = pathlib.PurePosixPath(entry.filename)
+                  assert not p.is_absolute() and '..' not in p.parts
+                  assert '.github' not in p.parts and '.git' not in p.parts
+              archive.extractall('.')
+          PY
+            git rm research-source.zip
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add .
+            git commit -m 'Expand reviewed protocol source and remove transfer archive'
+            git push origin HEAD:main
+          fi
+      - run: python3 scripts/verify.py
+      - run: git diff --exit-code -- docs data/image_inventory.json
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+      - name: Package static protocol
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy protocol and demo
+        id: deployment
+        uses: actions/deploy-pages@v4
