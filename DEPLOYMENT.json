@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": null,
+  "repository": "parsaara01-stack/hotel-photography-research",
+  "repository_created": false,
+  "remote_commit": null,
+  "pages_status": "pending",
+  "verified_public_url": null,
+  "ci_status": "not_observed",
+  "local_checks": "passing: static integrity and nine analysis tests",
+  "publication_stage": "protocol_and_demo_only"
+}

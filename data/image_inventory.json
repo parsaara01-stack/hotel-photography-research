@@ -1,0 +1,36 @@
+[
+  {
+    "id": "diagram-room-v1",
+    "asset": "docs/assets/room.svg",
+    "kind": "original_vector_wireframe",
+    "rights_status": "project_authored_demo",
+    "use": "Public mechanics demonstration only",
+    "same_room_verified": false,
+    "permission_evidence": "Original SVG drawing authored in this repository; no photographs, client media or real property representation",
+    "research_ready": false,
+    "reviewed_at_utc": "2026-10-29T19:02:11+00:00",
+    "sha256": "46ffbbaf5db8f66da88efe407a9a88982bfdd8d5abe15c9e6a7a578c08ebd2a7"
+  },
+  {
+    "id": "hotel-photo-set-required",
+    "asset": null,
+    "kind": "required_future_photographs",
+    "rights_status": "not_available",
+    "use": "Blocked until written permission and same-room ground truth",
+    "same_room_verified": false,
+    "permission_evidence": "Focused Codex media-path search returned no hotel/hospitality/resort matches. A depth-two directory-name search across mounted external volumes found two hospitality leads but no still-photo files within those candidate directories. No ownership or license inferred; disks were not exhaustively searched and Dropbox was not searched.",
+    "research_ready": false,
+    "reviewed_at_utc": "2026-10-29T19:02:11+00:00"
+  },
+  {
+    "id": "external-directory-leads",
+    "asset": null,
+    "kind": "private_location_leads",
+    "rights_status": "unconfirmed",
+    "use": "Two directory leads only; no still photographs found, copied or uploaded. Private paths withheld.",
+    "same_room_verified": false,
+    "permission_evidence": "Limited depth-two external-volume directory-name search for hotel/hospitality/resort and known hospitality property terms; candidates inspected for still-image extensions only.",
+    "research_ready": false,
+    "reviewed_at_utc": "2026-10-29T19:15:41+00:00"
+  }
+]

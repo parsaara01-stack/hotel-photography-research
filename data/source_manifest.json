@@ -1,0 +1,69 @@
+[
+  {
+    "id": "feess-2026",
+    "url": "https://www.mohrsiebeck.com/en/article/the-impact-of-photo-appeal-on-the-willingness-to-pay-for-hotel-stays-survey-and-experiment-101628jite-2026-0030/",
+    "doi": "10.1628/jite-2026-0030",
+    "retrieved_at_utc": "2026-10-29T19:02:11+00:00",
+    "access_depth": "abstract",
+    "local_capture": "mohr.html",
+    "sha256": "4df8c58ad3d3d2e685d82bc58f475f99ba12ef09fac4332e0b9305b1f1b54f15",
+    "capture_note": "Local source bytes retained outside public repository; copyrighted full texts not redistributed",
+    "extraction_locator": "Publisher Summary and citation metadata"
+  },
+  {
+    "id": "shin-2020",
+    "url": "https://journals.sagepub.com/doi/10.1177/0047287518817399",
+    "doi": "10.1177/0047287518817399",
+    "retrieved_at_utc": "2026-10-29T19:02:11+00:00",
+    "access_depth": "abstract",
+    "local_capture": null,
+    "sha256": null,
+    "capture_note": "Read through web tool; no byte-stable source capture. SHA is intentionally null",
+    "extraction_locator": "Abstract, Studies 1 and 2"
+  },
+  {
+    "id": "marder-2021",
+    "url": "https://eprints.soton.ac.uk/437165/",
+    "doi": "10.1177/0047287519895125",
+    "retrieved_at_utc": "2026-10-29T19:12:54+00:00",
+    "access_depth": "full_text",
+    "local_capture": "marder.pdf",
+    "sha256": "905dd8fba66969f2cf49af9ee34623d5efdc7d2cf5b2106482b2719b632406d5",
+    "capture_note": "Full accepted manuscript captured from University of Edinburgh alternate endpoint; local source bytes not redistributed",
+    "extraction_locator": "Accepted manuscript printed pp. 2, 15–31 (university PDF adds cover page); repository publication metadata",
+    "capture_url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/120559224/MarderEtalJTR2019TheRoleOfPhotographAesthetics.pdf"
+  },
+  {
+    "id": "cuesta-2023",
+    "url": "https://www.nature.com/articles/s41599-023-01529-w",
+    "doi": "10.1057/s41599-023-01529-w",
+    "retrieved_at_utc": "2026-10-29T19:02:11+00:00",
+    "access_depth": "full_text",
+    "local_capture": "nature.html",
+    "sha256": "a5e5f4f06e161d7496a421f655cd1dc6107570c5a82b37a367f381617584d362",
+    "capture_note": "Local source bytes retained outside public repository; copyrighted full texts not redistributed",
+    "extraction_locator": "Methodology: Data collection; Results: Image embedding; Limitations"
+  },
+  {
+    "id": "noone-2014",
+    "url": "https://ecommons.cornell.edu/entities/publication/597c9034-f61c-4a3d-a3f1-fd167ea0bfcd",
+    "doi": null,
+    "retrieved_at_utc": "2026-10-29T19:02:11+00:00",
+    "access_depth": "full_text",
+    "local_capture": "cornell.pdf",
+    "sha256": "916c80c79d336d9c5b84512f14cb6e0a598402d3d6ee54090c0431e384e82baf",
+    "capture_note": "Local source bytes retained outside public repository; copyrighted full texts not redistributed",
+    "extraction_locator": "Cornell Hospitality Report, September 2014, printed pp. 9–12"
+  },
+  {
+    "id": "bufquin-2020",
+    "url": "https://stars.library.ucf.edu/ucfscholar/894/",
+    "doi": "10.1016/j.ijhm.2019.102378",
+    "retrieved_at_utc": "2026-10-29T19:02:11+00:00",
+    "access_depth": "abstract",
+    "local_capture": "bufquin.html",
+    "sha256": "901bda8adbdc5f0ded2a502f374c9213594470df078b8e697e8c1657ad5341db",
+    "capture_note": "Local source bytes retained outside public repository; copyrighted full texts not redistributed",
+    "extraction_locator": "University repository abstract; publisher issue metadata"
+  }
+]

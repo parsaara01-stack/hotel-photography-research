@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+<title id="title">Fictional room wireframe</title><desc id="desc">Top-down drawing of a room with one bed, desk, armchair, luggage bench and a shower. There is no balcony. This is a fictional interface illustration, not a hotel photograph.</desc>
+<defs><pattern id="floor" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M0 0H38V38" fill="none" stroke="#bfab8b" stroke-width=".7" opacity=".35"/></pattern><pattern id="tile" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 0H20V20" fill="none" stroke="#b5bdb3" stroke-width=".6"/></pattern><linearGradient id="bed" x2="0" y2="1"><stop stop-color="#fbf8f0"/><stop offset="1" stop-color="#e2dacc"/></linearGradient></defs>
+<rect width="760" height="520" fill="#e4ded1"/>
+<rect x="75" y="52" width="610" height="410" rx="2" fill="#d7c3a3"/>
+<rect x="75" y="52" width="610" height="410" fill="url(#floor)"/>
+<path d="M75 462V52H685V462H75" fill="none" stroke="#203f3c" stroke-width="12"/>
+<path d="M75 132V264M685 112V263" stroke="#edf2e9" stroke-width="13"/>
+<path d="M75 139V257M685 119V256" stroke="#6a9690" stroke-width="3"/>
+<rect x="275" y="63" width="205" height="240" rx="5" fill="#aa8c68" stroke="#775e45" stroke-width="2"/>
+<rect x="287" y="78" width="181" height="215" rx="8" fill="url(#bed)" stroke="#b5ac9e"/>
+<rect x="299" y="89" width="70" height="43" rx="8" fill="#fffdf6" stroke="#d4ccbd"/>
+<rect x="386" y="89" width="70" height="43" rx="8" fill="#fffdf6" stroke="#d4ccbd"/>
+<path d="M288 154H467V272H288Z" fill="#d5e0d3"/>
+<path d="M288 249H467V280H288Z" fill="#436d63"/>
+<path d="M296 160H460M296 166H460" stroke="#f5f3e8" opacity=".8"/>
+<rect x="225" y="71" width="36" height="52" rx="2" fill="#9f805c" stroke="#775e45"/>
+<rect x="495" y="71" width="36" height="52" rx="2" fill="#9f805c" stroke="#775e45"/>
+<circle cx="244" cy="95" r="13" fill="#eee4c6" stroke="#766c55"/>
+<circle cx="513" cy="95" r="13" fill="#eee4c6" stroke="#766c55"/>
+<rect x="599" y="285" width="70" height="140" rx="3" fill="#9b7851" stroke="#765a3f" stroke-width="2"/>
+<rect x="611" y="306" width="42" height="55" rx="3" fill="#38514b"/>
+<path d="M615 312H648V351H615Z" fill="#b8d2c6"/>
+<rect x="547" y="326" width="46" height="52" rx="8" fill="#e5e5d6" stroke="#60756b" stroke-width="3"/>
+<path d="M555 337V366H585V337" fill="#b4c9b8" stroke="#60756b"/>
+<rect x="116" y="318" width="90" height="83" rx="22" fill="#7b9784" stroke="#486557" stroke-width="3"/>
+<rect x="126" y="334" width="70" height="56" rx="16" fill="#a6bb9f"/>
+<path d="M119 343V382M203 343V382" stroke="#436455" stroke-width="10"/>
+<circle cx="229" cy="374" r="21" fill="#e7d8b9" stroke="#9a825e" stroke-width="2"/>
+<rect x="290" y="361" width="105" height="39" rx="4" fill="#b7a58e" stroke="#765a3f" stroke-width="3"/>
+<path d="M305 364V396M319 364V396M333 364V396M347 364V396M361 364V396M375 364V396" stroke="#715f4e" stroke-width="5"/>
+<path d="M75 440H335V462M75 440V462" stroke="#203f3c" stroke-width="8" fill="none"/>
+<path d="M75 462H160V440H75Z" fill="#dce4dc"/>
+<path d="M76 443H159V460H76" fill="url(#tile)"/>
+<rect x="87" y="448" width="58" height="8" rx="3" fill="#b2c8c4"/>
+<path d="M434 462H505" stroke="#d7c3a3" stroke-width="15"/>
+<path d="M435 459V390A70 70 0 0 1 505 460" fill="none" stroke="#7c806a" stroke-width="1.5"/>
+<circle cx="646" cy="85" r="23" fill="#6f8970"/><circle cx="646" cy="85" r="14" fill="#99ac87"/>
+<path d="M75 488H685M75 482V494M685 482V494" stroke="#7f8875"/>
+<text x="380" y="507" text-anchor="middle" fill="#435b52" font-family="Arial,sans-serif" font-size="11" letter-spacing="3">FICTIONAL ROOM · NOT TO SCALE</text>
+</svg>

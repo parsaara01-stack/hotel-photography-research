@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env*
+private/
+raw/
+participant-data/
+*.jsonl
+!tests/fixtures/*.jsonl
+node_modules/
