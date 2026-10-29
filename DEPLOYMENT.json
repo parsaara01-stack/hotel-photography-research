@@ -1,11 +1,65 @@
 {
-  "checked_at_utc": null,
+  "checked_at_utc": "2026-10-29T19:20:47+00:00",
   "repository": "parsaara01-stack/hotel-photography-research",
-  "repository_created": false,
-  "remote_commit": null,
-  "pages_status": "pending",
-  "verified_public_url": null,
-  "ci_status": "not_observed",
+  "repository_created": true,
+  "remote_commit": "21f36861ffb723c7de72cc15d476c75015f8b40e",
+  "workflow_trigger_commit": "0f4aaed158dc4443e5a56a5c21b77ab296fb7efc",
+  "pages_status": "deployed_and_http_200_verified",
+  "verified_public_url": "https://parsaara01-stack.github.io/hotel-photography-research/",
+  "ci_status": "success",
+  "verified_run_url": "https://github.com/parsaara01-stack/hotel-photography-research/actions/runs/40939034556",
+  "verified_run_id": 40939034556,
   "local_checks": "passing: static integrity and nine analysis tests",
-  "publication_stage": "protocol_and_demo_only"
+  "publication_stage": "protocol_and_demo_only",
+  "connector_write_status": "403 Resource not accessible by integration; authenticated browser and first-party Actions fallback used",
+  "artifact_verification": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "sha256": "848a2edb864d21581f1e40e7ea383792dfbd89bc7f9f6263f445f6ad1e0a079f",
+      "matches_local": true
+    },
+    {
+      "path": "styles.css",
+      "http_status": 200,
+      "sha256": "fddd37eded6aa149a28f778822005c5fa7dbee37acd4ab6f1a72b17ee185890a",
+      "matches_local": true
+    },
+    {
+      "path": "app.js",
+      "http_status": 200,
+      "sha256": "77efcccf4e97727161b6ebe131574db6ec3dec87f4ae978ea2db3e831c54b126",
+      "matches_local": true
+    },
+    {
+      "path": "evidence.js",
+      "http_status": 200,
+      "sha256": "f37016e889e3c0d71fae950f120f6a2ed594a3adf160445b36ae6e9d6aa01a84",
+      "matches_local": true
+    },
+    {
+      "path": "assets/room.svg",
+      "http_status": 200,
+      "sha256": "46ffbbaf5db8f66da88efe407a9a88982bfdd8d5abe15c9e6a7a578c08ebd2a7",
+      "matches_local": true
+    },
+    {
+      "path": "data/evidence.csv",
+      "http_status": 200,
+      "sha256": "cd8778615091759c277aa4854a26719e61e56874350cc8ef0a448b61c7e6ba72",
+      "matches_local": true
+    },
+    {
+      "path": "data/source_manifest.json",
+      "http_status": 200,
+      "sha256": "8b76989732fdc464fdc7f770ffc47ea12d855e9bcc0cfe7b19029b3638cea4dd",
+      "matches_local": true
+    },
+    {
+      "path": "data/image_inventory.json",
+      "http_status": 200,
+      "sha256": "b084af6603b29dd4d5305c4cb3c584329dc1a4ae268a16d17dcf19f18f603321",
+      "matches_local": true
+    }
+  ]
 }
