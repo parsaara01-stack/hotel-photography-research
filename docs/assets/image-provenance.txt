@@ -1,0 +1,14 @@
+EDITORIAL IMAGE PROVENANCE — October 29, 2026
+
+Created at the user's request using the built-in image-generation tool.
+room-cover.jpg and room-detail.jpg depict an AI-generated fictional hotel room.
+They are not photographs by Parsa Ara, not a verified property, not a matched experimental pair, and not research observations or approved stimuli. The detail image is a generated interpretation, not a measured crop of a real room. Both are excluded from the interactive task and study release manifest.
+Original PNGs retained in the project outputs; JPEG copies made for website delivery, without compositional edits. File digests appear in data/image_inventory.json.
+
+COVER GENERATION PROMPT
+Use case: photorealistic-natural. Asset type: editorial cover image for Parsa Ara's hospitality research project 'What Can Room Photos Tell Us?'. Create a refined architectural editorial photograph of an entirely fictional boutique hotel room, horizontal 3:2 composition, high resolution. A believable modestly upscale room with one neatly made bed in ivory linen, a muted sage throw, an oak writing desk and simple chair beside a tall daylight window, a separate olive upholstered armchair, and a wooden luggage bench. Natural room geometry, restrained styling, tactile linen and timber, soft overcast daylight, cream plaster, deep green accents, subtle brass, calm human-scale proportions. Camera at eye level from the entrance with corrected verticals; enough of the room is shown to make its functional arrangement readable. Beautiful but not exaggerated luxury, not an advertisement. No people, no logos, no typography, no collage, no watermark, no charts, no labels. This is a clearly disclosed AI-generated editorial illustration of a fictional room, never evidence or an experimental stimulus. It should harmonize with a warm cream/deep forest-green research site and a white/navy minimalist photography portfolio.
+
+DETAIL GENERATION PROMPT
+Use case: precise-object-edit. Supporting editorial image for a hospitality research essay. Use the supplied fictional AI-generated hotel-room image as the visual reference. Create a new tighter architectural photograph of its window-side oak work desk, chair, and olive armchair. Keep the room's cream walls, natural overcast light, green curtains, wood furniture, restrained brass lamps and believable proportions consistent. The composition should emphasize usable workspace and separate seating, with the bed mostly outside the frame. Horizontal 3:2, realistic editorial photography, calm and restrained, no people, no text, no labels, no collage, no logos or watermark. This is another disclosed AI editorial illustration, not an experimental stimulus or a claimed real property photograph.
+
+Input to the detail generation: the generated cover room, used as a visual reference only.

@@ -1,4 +1,9 @@
 # Revision history
+## Visual update — October 29, 2026 — protocol remains v0.2
+- Added two explicitly labeled AI-generated editorial room illustrations, outside the demo and study stimulus manifest.
+- Added image provenance and prompts, responsive sizing, image descriptions and social-preview metadata.
+- Added a route back to Parsa Ara’s research index. No research measures, results or release gates changed.
+- Prepared a separate unpublished parsaara.com portfolio draft in the established navy/white/gold style.
 ## v0.2 — October 29, 2026 — audit revision before participant outcomes
 - Reframed as room-photo coverage and factual identification; removed sales framing.
 - Replaced four factorial cells with two coverage arms; held photographic treatment constant.

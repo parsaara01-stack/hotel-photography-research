@@ -46,4 +46,7 @@ for forbidden in ['fetch(','XMLHttpRequest','sendBeacon','localStorage','session
 assert "data_kind:'demo'" in js and "environment:'public_demo'" in js
 assert "protocol_version:'0.2'" in js and 'name="atmosphere"' not in html
 assert 'What Can Room Photos Tell Us?' in html and "connect-src 'none'" in html
+assert 'AI-GENERATED EDITORIAL IMAGE' in html
+assert 'not a study property or experimental stimulus' in html
+assert 'room-cover.jpg' not in js and 'room-detail.jpg' not in js, 'Editorial illustrations must not enter demo stimuli'
 print('PASS: data structure/mirrors, demo release lock, local references, asset digest and limited transport/storage string checks. Not research/privacy certification.')

@@ -32,5 +32,29 @@
     "permission_evidence": "Limited depth-two external-volume directory-name search for hotel/hospitality/resort and known hospitality property terms; candidates inspected for still-image extensions only.",
     "research_ready": false,
     "reviewed_at_utc": "2026-10-29T19:15:41+00:00"
+  },
+  {
+    "id": "room-cover-ai-v1",
+    "asset": "docs/assets/room-cover.jpg",
+    "kind": "ai_generated_editorial_illustration",
+    "rights_status": "project_generated_not_property_documentation",
+    "use": "Fictional hotel-room editorial cover; public illustration only; excluded from study stimuli and observed data",
+    "same_room_verified": false,
+    "permission_evidence": "Generated with built-in image tool at user request; depicts no verified property. Prompt and disclosure in docs/assets/image-provenance.txt",
+    "research_ready": false,
+    "reviewed_at_utc": "2026-10-29",
+    "sha256": "26b4f0791ee241839802b0788862c4e0359fbbcfa55dcd1d5aaa7f74b52ad1ac"
+  },
+  {
+    "id": "room-detail-ai-v1",
+    "asset": "docs/assets/room-detail.jpg",
+    "kind": "ai_generated_editorial_illustration",
+    "rights_status": "project_generated_not_property_documentation",
+    "use": "Fictional window-side workspace and seating detail; public illustration only; excluded from study stimuli and observed data",
+    "same_room_verified": false,
+    "permission_evidence": "Generated with built-in image tool at user request; depicts no verified property. Prompt and disclosure in docs/assets/image-provenance.txt",
+    "research_ready": false,
+    "reviewed_at_utc": "2026-10-29",
+    "sha256": "2790651d6ded253bdd16b7f9442c9d8816aec4b6030b3451d674a29d9149fbe6"
   }
 ]
