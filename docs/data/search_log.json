@@ -1,0 +1,49 @@
+{
+  "version": "0.2",
+  "search_date": "2026-10-29",
+  "platform": "Web search through Codex web tool",
+  "scope": "Targeted amendment search; not exhaustive, systematic or a novelty test",
+  "original_search_history": "Original v0.1 exact query/screening history unavailable; not reconstructed",
+  "queries": [
+    "hotel photographs \"comprehension\" room information experiment",
+    "hotel photographs \"accuracy\" \"information\" booking experiment",
+    "\"An Exploration of the Effects of Photograph Content\" pdf",
+    "\"Effects of hotel website photographs\" pdf",
+    "\"Shin\" \"Noone\" \"Robson\" \"photograph\" \"pdf\"",
+    "\"Bufquin\" \"102378\" manuscript"
+  ],
+  "selection_method": "Relevant visible publisher/university results screened; search-engine totals and exhaustive screening counts not recorded",
+  "records": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0278431919304669",
+      "decision": "Existing Bufquin record retained; abstract and section snippets available, not full-text extraction",
+      "reason": "Direct relevance to image information and intention"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0278431920300979",
+      "decision": "Candidate for expanded review; not added to extracted evidence",
+      "reason": "Photo size/human presence and transportation are adjacent constructs; detailed appraisal pending"
+    },
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0290629",
+      "decision": "Adjacent candidate; not added to extracted evidence",
+      "reason": "Website information-quality classification, not a direct factual-identification experiment"
+    },
+    {
+      "url": "https://www.mdpi.com/2076-3417/16/19/9618",
+      "decision": "Not included in empirical human-outcome matrix",
+      "reason": "Visual content management/classification focus"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/0047287518817399",
+      "decision": "Existing Shin record remains abstract-only",
+      "reason": "No primary full text obtained in this amendment"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/13467581.2025.2510604",
+      "decision": "Adjacent candidate for expanded review",
+      "reason": "User/organization imagery content; no full appraisal in this amendment"
+    }
+  ],
+  "next_review": "Retrieve missing full texts lawfully, broaden database/citation searches and independently verify extraction before claiming a research gap. No author contact or purchase performed."
+}

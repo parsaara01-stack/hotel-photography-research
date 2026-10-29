@@ -16,4 +16,4 @@ for item in inventory:
         item['sha256']=hashlib.sha256((ROOT/item['asset']).read_bytes()).hexdigest()
 (ROOT/'data/image_inventory.json').write_text(json.dumps(inventory,indent=2)+'\n')
 shutil.copyfile(ROOT/'data/image_inventory.json', ROOT/'docs/data/image_inventory.json')
-print('Built static evidence bundle and verified illustration hash.')
+print('Built static evidence bundle and refreshed authored-illustration digest.')

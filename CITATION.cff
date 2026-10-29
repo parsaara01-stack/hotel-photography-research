@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "Please cite this protocol/demo with its version and access date. No participant results exist."
-title: "What Does Better Photography Sell?"
+message: "Cite the protocol version and access date. No participant results exist."
+title: "What Can Room Photos Tell Us?"
 authors:
   - family-names: Ara
     given-names: Parsa
-version: "0.1"
+version: "0.2"
 date-released: 2026-10-29
 type: software
 repository-code: "https://github.com/parsaara01-stack/hotel-photography-research"

@@ -1,58 +1,48 @@
-# Data dictionary and collection log
+# Data dictionary — protocol v0.2
 
-## Literature evidence
+## Evidence files
+`evidence.json` and `.csv`: one row per publication. `access_depth` refers to the original extraction: full text or abstract. Later publisher section snippets do not upgrade an extraction to full-text review. Null means unestablished/unextracted, never zero. `source_manifest.json` fingerprints retained source bytes where available; byte hashes do not certify an interpretation. Raw papers remain outside this public repository.
 
-One row per primary publication, not one row per experiment or participant. Collection date: October 29, 2026; exact UTC retrieval timestamp in each row. Search is a purposive pilot and may omit eligible studies. We did not pool effect sizes across incompatible outcomes.
+`study_matrix.csv`: one row per identifiable main study, plus explicitly labeled development pilots where extracted. Publication totals are not assigned to individual studies. `reported_finding` is the authors’ report; `appraisal` is this project’s interpretation. Null/unextracted effects are not evidence of null effects. No pooled effect estimate or formal risk-of-bias score is supplied. Independent extraction verification remains pending.
 
-| Field | Meaning |
+`search_log.json`: actual amendment search queries, platform, date, selected records screened and decisions. It is a targeted search, not an exhaustive database search. Original v0.1 query history is unavailable; no retrospective search counts are invented.
+
+## Demo
+Version 2 envelope: `data_kind: demo`, `environment: public_demo`, `protocol_version: 0.2`, `stimulus_version: diagram-v2`, random `session_id`, binary `coverage`, and assigned/completed `events` with elapsed milliseconds. Completion stores six answers and counts `correct`, `incorrect`, `cannot_tell`. No confidence or sales measure in this public mechanics demo. No response transport or persistent browser storage. Optional JSON download is local. Hosting access logs are separate.
+
+## Restricted analysis row (JSONL)
+Every row has exactly these fields. Never commit real rows.
+
+| Field | Type / meaning |
 |---|---|
-| id | Stable project citation key |
-| title, authors | Verified publication identity |
-| issue_year, first_online_date | Issue year and online/in-press date, kept separate |
-| doi | DOI; null means no DOI established, not a missing publication |
-| url | Primary publisher or university repository link |
-| access_depth | `full_text` or `abstract`; never infer full-text review from a metadata page |
-| design | Design as described in accessed material |
-| sample_n, sample_unit | Reported N with its unit; null = not stated in accessed material, not zero |
-| outcome_type | `stated_wtp`, `booking_intention`, `booking_proxy`, or `visual_attention` |
-| extraction, limitations | Concise interpretation and limits of that source |
-| source_locator | Section/page supporting the extraction |
-| retrieved_at_utc | ISO 8601 access timestamp |
-| measurement_window | Publication-specific time scope; see extraction rather than assume comparable periods |
-| missingness | Explicit limits of accessible sampling/missing-data information |
-| capture | Local raw capture filename if available; copyrighted raw files stay outside the public repo |
+| schema_version | Integer 2 |
+| data_kind, environment | `observed`, `approved_study` |
+| protocol_version, stimulus_version | Exact approved-release match |
+| participant_id | Random study ID, 8–80 ASCII letters/digits/underscore/hyphen; never a name/provider ID |
+| consent, eligible | True before assignment |
+| coverage | Integer 0 = narrower; 1 = broader |
+| answers | Six keyed strings or null; explicit `cannot_tell` remains distinct |
+| confidence | Optional integer 0–100, represented by null if unanswered |
+| coverage_rating | Optional integer 1–7, represented by null if unanswered |
+| technical_failure | Boolean; does not exclude a row |
 
-`source_manifest.json` records hashes for locally captured HTML/PDF bytes. These are access-time fingerprints, not a claim that a changing publisher page will reproduce byte-for-byte. Some sources were readable through web extraction but blocked direct byte retrieval; their hash/capture fields are intentionally null. Cornell full text was fetched from the repository's bitstream API after the browser endpoint rate-limited. Shin remained restricted; Bufquin’s repository explicitly provides no downloadable document. Marder’s accepted manuscript was read through web PDF extraction, then captured from the University of Edinburgh alternate endpoint after the Southampton direct download returned 403; its exact capture URL is recorded. Feess metadata/abstract was fetched directly; no full paper or purchase was made.
+Unknown fields are rejected as a guard against accidental extra columns, not a guarantee of anonymity. There is no `atmosphere`, `booking_intention` or `appeal` main-study field. Six-item incomplete rows are missing for the primary total but contribute observed item categories and itemwise identification bounds.
 
-## Image/rights inventory
+## Requirement-to-data mapping
+| Protocol requirement | Collection field / record | Storage and validation | Reporting |
+|---|---|---|---|
+| Consent/eligibility | Versioned consent receipt, eligibility outcome; booleans in analysis row | Restricted consent log; must precede assignment | Enrollment flow |
+| Randomization | Study ID, coverage, block ID, sequence index, assignment timestamp | Restricted immutable allocation log; reconcile every ID with analysis roster | Assigned counts and deviations |
+| Stimulus exposure | Assigned release/hash, render status, viewport, elapsed exposure | Restricted technical log; exact release mapping | Render failures by arm |
+| Primary answers | answers[0:6] | Restricted response store; keyed options/null validation | Total and item/category counts |
+| Secondary ratings | confidence, coverage_rating | Restricted response store; bounded integer/null | Descriptive N/mean/SD |
+| Withdrawal/missingness | Status and permitted retention, completion state, reason code | Restricted audit log; do not collect unnecessary free text | Flow and missingness reasons |
+| Duplicate prevention | Provider token/linkage | Separate restricted provider mapping; never analysis ID itself | Adjudication counts |
+| Permissions/answerability | File/arm/slot hashes, rights and reviewer records | Restricted originals; publish cleared ledger summary | Stimulus provenance/limitations |
 
-`image_inventory.json`: `id`, `asset` (relative path or null), `kind`, `rights_status`, `use`, `same_room_verified`, `permission_evidence`, `research_ready`, `reviewed_at_utc`.
+No backend or those private logs exists yet. The analysis loader cannot certify full-roster completeness. Withdrawn response data are retained only as allowed by reviewed consent; preservation of allocation metadata must be explicitly permitted.
 
-Real hotel photographs cleared for research: **0**. The original SVG is a fictional room drawing for interface demonstration. A focused filename/path search in existing Codex workspaces for hotel/hospitality/resort media found no qualifying matches. Other interior/client media are not presumed reusable. A later depth-two directory-name search across mounted external volumes identified two hospitality directory leads, with no still-image files discovered in those candidate trees. External disks were not exhaustively searched; Dropbox was not searched. The inventory records the scope of this limited search, not a claim that Parsa owns no hotel images. No client imagery or private file paths are published.
+## Future release manifest
+Status `approved_for_collection`; schema version 2; protocol version 0.2; non-demo stimulus version; real review and preregistration references; frozen assignment ceiling ≥2; six items containing a stable `id`, string `options` (including `cannot_tell`) and factual `correct` key; twelve `stimuli` entries containing `coverage`, `slot` (1–6), relative `path` and SHA-256; six `answerability` entries with item ID and ratings for both arms; all broader-arm entries established. Answerability values: established / contradicted / not_established.
 
-## Demo event envelope
-
-Downloaded JSON contains `schema_version: 1`, `data_kind: "demo"`, `environment: "public_demo"`, `protocol_version: "0.1"`, `stimulus_version: "diagram-v1"`, random `session_id`, `condition` (clarity/atmosphere binary), and ordered `events`. Each event has `event`, `elapsed_ms`, and `payload`. Allowed event names: `assigned`, `completed`. Completion payload: six explicit answers, confidence 0–100, and the demo correctness count. The diagram’s key is public and irrelevant to a real experiment. No event is sent anywhere, persisted in browser storage, or counted as research. Ordinary GitHub hosting access logs are outside the demo’s control. Export is a local file initiated by the visitor.
-
-## Future restricted analysis input
-
-One JSON object per line, including assigned participants with no outcome. Exact keys:
-
-| Field | Type / values |
-|---|---|
-| schema_version | integer 1 |
-| data_kind | exactly `observed`; demo/synthetic/test always rejected |
-| environment | exactly `approved_study` |
-| protocol_version | matches release manifest |
-| stimulus_version | matches non-demo frozen release |
-| participant_id | nonidentifying study ID, 8–80 ASCII letters/digits/hyphen/underscore |
-| consent, eligible | boolean true; assessed before randomization |
-| clarity, atmosphere | integer 0 or 1 |
-| answers | six strings from each release-keyed item’s allowed options, or null for an unanswered item |
-| confidence | integer 0–100 or null |
-| booking_intention, appeal | integer 1–7 or null |
-| technical_failure | boolean; retained, not an exclusion |
-
-Missing a required field is an error; explicit null is missing. Unknown fields are rejected to prevent accidental inclusion of names/emails/free text. Full-roster completeness still depends on collection-system audit. A manually edited `observed` flag is not proof of actual data. Keep these files outside Git, with a separately approved retention policy.
-
-`data/release.json` currently disallows observed analysis. A future reviewed release must set `status: "approved_for_collection"`, replace the demo stimulus ID, include six item objects (`options`, `correct`) and freeze hashes in `stimulus_sha256`. Approval is an actual governance step, not achieved by changing a string in this file. Test fixtures are labeled synthetic and are only exercised through test-only functions.
+Run analysis with `--stimulus-root` pointing to the approved local files. Path traversal and missing/mismatched files fail validation. A repeated hash is allowed only if it refers to the same file path; repeated slots within an arm are rejected. Real shared images across arms are legitimate controls. These checks cannot substitute for independent review.
